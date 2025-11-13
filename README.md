@@ -57,7 +57,7 @@ How can the business optimize website performance and user conversion by analyzi
 
 ### 📌 Data Source  
 
-Data schema: [Click to view the dataset schem](https://support.google.com/analytics/answer/3437719?hl=en)
+Data schema: [Click to view the dataset schema](https://support.google.com/analytics/answer/3437719?hl=en)
 
 ### 📊 How to access the data
 
