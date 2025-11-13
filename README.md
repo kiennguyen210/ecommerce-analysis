@@ -94,8 +94,9 @@ ORDER BY month;
 | 201702   |	   62192 |	      62185 |         	708 |
 | 201703   |   	69931 |       69927	|          883 |
 
-Insight: 
+#### Insight:
 There is a positive trend from February to March in all three metrics. February appears to be the weakest month in terms of site visits, which could be worth investigating for potential causes.
+
 ---
 
 ## 🔎 Final Conclusion & Recommendations  
