@@ -5,8 +5,6 @@
 
 **Author:** Kien Nguyen Duy  
 
-**DOB:** 2000-11-22  
-
 **Tools Used:** SQL
 
 ---
