@@ -3,7 +3,7 @@
 
  _Analyze the performance of an e-commerce website, focusing on traffic, engagement, and revenue over time | SQL_
 
-**Author:** Kien Nguyen Duy  
+**Author:** Nguyễn Duy Kiên  
 
 **Tools Used:** SQL
 
