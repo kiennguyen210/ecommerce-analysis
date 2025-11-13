@@ -1,8 +1,6 @@
 # Ecommerce Web Performance & Purchase Behavior Analysis | SQL, BigQuery
 ![Image](https://github.com/user-attachments/assets/87a187d0-9f07-4941-ab65-62e06929886b)
 
-👉🏻Change Icon emoji 🔥🔍📘🚩 to your likings by clicking "Start" + "."
-
  _Analyze the performance of an e-commerce website, focusing on traffic, engagement, and revenue over time | SQL_
 
 **Author:** Kien Nguyen Duy  
@@ -58,7 +56,9 @@ How can the business optimize website performance and user conversion by analyzi
 ## 📂 Dataset Description & Data Structure  
 
 ### 📌 Data Source  
-- Source: (Mention where the dataset is obtained from—Kaggle, company database, government sources, etc.)  
+
+Data schema: [data schema](https://support.google.com/analytics/answer/3437719?hl=en)
+📊 Click to view the dataset schema
 
 ### 📊 How to access the data
 
