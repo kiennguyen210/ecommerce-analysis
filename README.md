@@ -70,54 +70,33 @@ How can the business optimize website performance and user conversion by analyzi
 
 ---
 
-## ⚒️ Main Process
+## ⚒️ Data Processing
+### 🔍 Task 1: Calculate total visit, pageview, transaction for Jan, Feb and March 2017 (order by month)
 
+#### Purpose: 
+The goal of this analysis is to calculate the total number of visits, pageviews, transactions, and revenue for each month (January, February, and March) in 2017, based on the data provided. The results will be ordered by month to observe the trends and variations in website performance over these three months.
 
-👉🏻 First, explain codes' purpose - what they do in 1, 2 short sentences.
+#### Query:
 
-*_Example_*
+```sql
+SELECT
+  FORMAT_DATE('%Y%m', PARSE_DATE('%Y%m%d', date)) AS month,
+  SUM(totals.visits) AS total_visit,
+  SUM(totals.pageviews) AS total_pageview,
+  SUM(totals.transactions) AS total_transaction
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_2017*`
+WHERE _table_suffix BETWEEN '0101' AND '0331'
+GROUP BY month
+ORDER BY month;
+```
 
-## Task 1: Analyze bounce rate...
+#### Query Result:
+| month	   | visits  	| pageviews   |	transactions |
+|:---------|---------:|------------:|-------------:|
+| 201701   |	   64694 |	     257708 |         	713 |
+| 201702   |	   62192 |	     233373 |         	733 |
+| 201703   |   	69931 |      259522	|          993 |
 
-Bounce rate represents the percentage of website sessions where users visit only one page and leave without interacting further with the site. A high bounce rate can indicate that visitors are not [....]
-
-**_📌You need to show your understanding/ thinking process when you do this analysis. In the above exp, I explain the meaning of Bounce Rate in Marketing performance analysis - which demonstrates my understanding about the metric & its role in my projects/ flow of analysis"_**
-**_📌If the task is just simple as "Remove duplication, Replace null value.."--> Summarize all steps related to Transforming & Cleaning data steps in a group & explain shortly at once the reason why you need that transformation_**
-
-👉🏻 Then how your query/ code & Insert screenshots of your result
-
- **_If your result is a very long table with many records, only show top 5/10 and bottom 5/10 rows, or records that relevant to the insights/ observation below_**
-
-*_Example_*
-
-### Project Results:
-
-| Period   | Name                | Count Items | Count Orders | Sales        |
-|:---------|:--------------------|------------:|-------------:|-------------:|
-| Apr 2014 | Bib-Shorts          |           4 |            1 |       233.97 |
-| Feb 2014 | Bib-Shorts          |           4 |            2 |       233.97 |
-| Jul 2013 | Bib-Shorts          |           2 |            1 |       116.99 |
-| Jun 2013 | Bib-Shorts          |           2 |            1 |       116.99 |
-| Apr 2014 | Bike Racks          |          45 |           45 |     5,400.00 |
-| Aug 2013 | Bike Racks          |         222 |           63 |    17,387.18 |
-| Dec 2013 | Bike Racks          |         162 |           48 |    12,582.29 |
-| Feb 2014 | Bike Racks          |          27 |           27 |     3,240.00 |
-| Jan 2014 | Bike Racks          |         161 |           53 |    12,840.00 |
-| Jul 2013 | Bike Racks          |         422 |           75 |    29,802.30 |
-| ...      | ...                 |         ... |          ... |          ... |
-| May 2014 | Vests               |         610 |          103 |    23,640.71 |
-| Nov 2013 | Vests               |         315 |           75 |    12,937.24 |
-| Oct 2013 | Vests               |         611 |           93 |    23,255.74 |
-| Sep 2013 | Vests               |         623 |          102 |    24,100.47 |
-| Jul 2013 | Wheels              |           4 |            1 |       698.63 |
-| Jun 2013 | Wheels              |           3 |            1 |       450.91 |
-| Sep 2013 | Wheels              |           1 |            1 |        83.30 |
-
-*A summary of the full results. The complete dataset is available in the repository.*
-
-👉🏻 Finally, explain your observations/ findings from the results 
-  
- _Describe trends, key metrics, and patterns._  
 
 ---
 
